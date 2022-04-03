@@ -66,7 +66,7 @@
             return form.valid();
         },
         onFinished: function(event, currentIndex) {
-            location.href = "/Form/submission.html";
+            location.href = "Mpatel1803.SFE.github.io/Form/submission.html";
         },
         onStepChanged: function(event, currentIndex, priorIndex) {
 
