@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>EACC - SFE4010</title>
+		<link rel="stylesheet" href="/Login Page/LoginPageCss.css">
+		
+	</head>
+    <body>
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="/Form/index.html">
+			<h1>Create Account</h1>
+			<input type="text" placeholder="Name" />
+			<input type="text" placeholder="Phone Number" />
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Password" />
+			<button class="signupButton">Sign Up</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="/Form/index.html">
+			<h1>Sign in</h1>
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Password" />
+			<a href="#">Forgot your password?</a>
+			<button class="signupButton">Sign In</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Already Registered?</h1>
+				<p>To fill or edit the form, please log in to your account.</p>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>No Account?</h1>
+				<p>Create a new account to login in and access the form</p>
+				<button class="ghost" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+	<script src="/Login Page/LoginPageJs.js"></script>
+    </body>
+</html>
