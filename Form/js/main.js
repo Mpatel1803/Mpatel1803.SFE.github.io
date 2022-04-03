@@ -66,7 +66,7 @@
             return form.valid();
         },
         onFinished: function(event, currentIndex) {
-            location.href = "/submission.html";
+            location.href = "/Form/submission.html";
         },
         onStepChanged: function(event, currentIndex, priorIndex) {
 
