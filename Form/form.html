@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="colorlib.com">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Form</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="vendor/nouislider/nouislider.min.css">
+
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="google_translate_element" style="width: 150px;  height: 100%; margin-left: 2%; "></div>
+
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+    </script>
+    
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/logo.png">
+            <h1>Ethics and Anti-Corruption <br> Commission</h1>
+            <h3>EACC Self Declaration Form</h3>
+        </div>
+        <div class="signout">
+            <a href="/index.html"><button>Sign Out </button></a>
+        </div>
+    </div>
+
+    <div class="main">
+
+        <div class="container">
+            <form method="POST" id="signup-form" class="signup-form" action="#">
+                
+                <div>
+                    <h3>Personal Information</h3>
+                    <fieldset>
+                        <h2>Personal information</h2>
+                        <p class="desc">Please enter your infomation and proceed to next step.</p>
+                        <div class="fieldset-content">
+                            <div class="form-row">
+                                <label class="form-label">Name</label>
+                                <div class="form-flex">
+                                    <div class="form-group">
+                                        <select name="prefix" id="prefix">
+                                            <option value selected hidden>Select</option>
+                                            <option value="Mr.">Mr.</option>
+                                            <option value="Mrs.">Mrs.</option>
+                                            <option value="Miss.">Miss.</option>
+                                            <option value="Ms.">Ms.</option>
+                                            <option value="Prof.">Prof.</option>
+                                            <option value="Dr.">Dr.</option>
+                                        </select>
+                                        <span class="text-input">Prefix</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="first_name" id="first_name" />
+                                        <span class="text-input">First</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text"  name="middle_name" id="middle_name" />
+                                        <span class="text-input">Middle</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text"   name="last_name" id="last_name" />
+                                        <span class="text-input">Last</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="other_name" id="other_name" />
+                                        <span class="text-input">Other</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <label class="form-label">Identification details</label>
+                                <div class="form-flex">
+                                    
+                                    <div class="form-group">
+                                        <input type="text"   name="id_num" id="id_num" />
+                                        <span class="text-input">ID Card No.</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text"   name="pass_num" id="pass_num" />
+                                        <span class="text-input">Passport No.</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text"   name="exp_date" id="exp_date" />
+                                        <span class="text-input">Expiry date of Passport</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text"   name="pin" id="pin" />
+                                        <span class="text-input">Pin No.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-flex">
+                                    <div class="form-group">
+                                        <label class="form-label">Sex</label>
+                                        <select name="sex" id="sex">
+                                            <option value selected hidden>Select</option>
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+                                        </select>
+                                        <!--<input type="text"   name="sex" id="sex" />-->
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Occupation</label>
+                                        <input type="text"   name="occupation" id="occupation" />
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <label class="form-label">Contact Details</label>
+                                <div class="form-flex">
+                                    <div class="form-group">
+                                        <input type="text"   name="phone" id="phone" />
+                                        <span class="text-input">Telephone No.</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text"   name="mobile" id="mobile" />
+                                        <span class="text-input">Mobile No.</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="other_phone" id="other_phone" />
+                                        <span class="text-input">Other Numbers</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </fieldset>
+
+                    <h3>Contact Details</h3>
+                    <fieldset>
+                        <h2>Contact Details</h2>
+                        <p class="desc">Please enter your infomation and proceed to next step</p>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address:</label>
+                            <input type="email" name="email" id="email" />
+                            <span class="text-input">Example  :<span>  Manav@gmail.com</span></span>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-flex">
+                                <div class="form-group">
+                                    <label class="form-label">Postal Address</label>
+                                    <input type="text"   name="poBox" id="poBox" />
+                                    <span class="text-input">PO Box</span>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Code</label>
+                                    <input type="text"   name="code" id="code" />
+                                    <span class="text-input">Code</span>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Other Address</label>
+                                    <input type="text"   name="other_address" id="other_address" />
+                                    <span class="text-input">Other Address</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <label class="form-label">Residential Address</label>
+                            <div class="form-flex">
+                                <div class="form-group">
+                                    <input type="text"   name="estate" id="estate" />
+                                    <span class="text-input">Estate / Town / Location</span>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text"   name="district" id="district" />
+                                    <span class="text-input">District</span>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text"   name="county" id="county" />
+                                    <span class="text-input">County</span>
+                                </div>
+                            </div>
+                            <div class="form-flex">
+                            <div class="form-group">
+                                <input type="text"   name="town" id="town" />
+                                <span class="text-input">Town / City</span>
+                            </div>
+                            <div class="form-group">
+                                <input type="text"   name="country" id="country" />
+                                <span class="text-input">Country</span>
+                            </div>
+                            </div>
+                        </div>
+                        
+                    </fieldset>
+                    
+                    <h3>Birth Information</h3>
+                    <fieldset>
+                        <h2>Birth Information</h2>
+                        <p class="desc">Please enter your infomation and proceed to next step</p>
+                        <div class="form-flex">
+                            <div class="form-group">
+                            <label for="dob" class="form-label">Date of Birth</label>
+                            <input type="date" name="dob" id="dob" />
+                            </div>
+                            <div class="form-group">
+                                <label for="placeDOB" class="form-label">Place of Birth</label>
+                                <input type="text"  name="placeDOB" id="placeDOB" />
+                            </div>
+                            <div class="form-group">
+                                <label for="countryDOB" class="form-label">Country of Birth</label>
+                                <input type="text"  name="countryDOB" id="countryDOB" />
+                            </div>
+                        </div>
+                        <div class="form-flex">
+                            
+                            <div class="form-group">
+                                <label for="districtDOB" class="form-label">District of Birth</label>
+                                <input type="text"  name="districtDOB" id="districtDOB" />
+                            </div>
+                            <div class="form-group">
+                                <label for="countyDOB" class="form-label">County of Birth</label>
+                                <input type="text"  name="countyDOB" id="countyDOB" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="certificate" class="form-label">Birth Certificate Number</label>
+                            <input type="text"  name="certificate" id="certificate" />
+                        </div>
+
+                        <h2>Nationality</h2>
+                        <p class="desc">Please enter your infomation and proceed to next step</p>
+                        <div class="form-flex">
+                        <div class="form-group">
+                            <label for="nationality" class="form-label">Kenyan</label>
+                            <input type="checkbox"  name="nationality" id="nationality" style="height: 30px; margin-left: -40%; margin-top: -3.5%;"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="dualNation" class="form-label">Dual Nationality</label>
+                            <input type="checkbox"  name="dualNation" id="dualNation" style="height: 30px; margin-left: -33%; margin-top: -3.5%;"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="othernation" class="form-label">Provide More information</label>
+                            <input type="text"  name="othernation" id="othernation" />
+                        </div>
+                        </div>
+                                                
+                    </fieldset>
+
+                    <h3>Marital Status</h3>
+                    <fieldset>
+                        <h2>Marital Status</h2>
+                        <p class="desc">Please enter your infomation and proceed to next step</p>
+                        <div class="form-row">
+                            <div class="form-flex">
+                                <div class="form-group">
+                                    <label class="form-label">Status</label>
+                                    <select name="status" id="status">
+                                        <option value selected hidden>Select</option>
+                                        <option value="Single">Single</option>
+                                        <option value="Married">Married</option>
+                                        <option value="Separated">Separated</option>
+                                        <option value="Divorced">Divorced</option>
+                                        <option value="Widowed">Widowed</option>
+                                    </select>
+                                    <!--<input type="text"   name="sex" id="sex" />-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label class="form-label">Name</label>
+                            <span class="text-input">If married give names of the spouse</span>
+                            <br>
+                            <div class="form-flex">
+                                <div class="form-group">
+                                    <select name="prefix" id="prefix">
+                                        <option value selected hidden>Select</option>
+                                        <option value="Mr.">Mr.</option>
+                                        <option value="Mrs.">Mrs.</option>
+                                        <option value="Miss.">Miss.</option>
+                                        <option value="Ms.">Ms.</option>
+                                        <option value="Prof.">Prof.</option>
+                                        <option value="Dr.">Dr.</option>
+                                    </select>
+                                    <span class="text-input">Prefix</span>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="first_name" id="first_name" />
+                                    <span class="text-input">First</span>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text"  name="middle_name" id="middle_name" />
+                                    <span class="text-input">Middle</span>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text"   name="last_name" id="last_name" />
+                                    <span class="text-input">Last</span>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="other_name" id="other_name" />
+                                    <span class="text-input">Other</span>
+                                </div>
+                            </div>
+                            <div class="form-flex">
+                                <div class="form-group">
+                                <label class="form-label">Nationality</label>
+                                <input type="text"   name="other_address" id="other_address" />
+                                <span class="text-input">Nationality of spouse</span>
+                            </div>
+                            </div>
+                            <div class="form-flex">
+                                <div class="form-group">
+                                <label class="form-label">Children</label>
+                                <input type="text"   name="other_address" id="other_address" />
+                                <span class="text-input">Name of children below age 18 years</span>
+                            </div>
+                            </div>
+                            
+                        </div>
+                    </fieldset>
+
+                    <h3>Educational Qualifications</h3>
+                    <fieldset>
+                        <h2>Educational Qualifications</h2>
+                        <p class="desc">Please enter your infomation and proceed to next step</p>
+                        <div class="form-row">
+                            <div class="form-flex">
+                                <div class="form-group">
+                                    <label class="form-label">Education</label>
+                                    <select name="status" id="status">
+                                        <option value selected hidden>Select</option>
+                                        <option value="Primary">Primary</option>
+                                        <option value="Secondary">Secondary</option>
+                                        <option value="ALevel">'A' Level</option>
+                                        <option value="Diploma">Diploma</option>
+                                        <option value="Degree">Degree</option>
+                                        <option value="Masters">Masters</option>
+                                        <option value="PHD">PHD</option>
+                                    </select>
+                                    <!--<input type="text"   name="sex" id="sex" />-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label class="form-label">Highest Academic Qualifications</label>
+                            <div class="form-flex">
+                                
+                                <div class="form-group">
+                                    <input type="text" name="first_name" id="first_name" />
+                                    <span class="text-input">Qualifications</span>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text"  name="middle_name" id="middle_name" />
+                                    <span class="text-input">Institution</span>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text"   name="last_name" id="last_name" />
+                                    <span class="text-input">Year</span>
+                                </div>
+                            </div>                            
+                        </div>
+                        <h2>Language Spoken</h2>
+                        <p class="desc">Please enter your infomation and proceed to next step</p>
+                        <div class="form-row">
+                            <label class="form-label">Languages Spoken</label>
+                            <div class="form-flex">
+                                
+                                <div class="form-group">
+                                    <input type="text" name="first_name" id="first_name" />
+                                    <span class="text-input">First Language</span>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text"  name="middle_name" id="middle_name" />
+                                    <span class="text-input">Second Language</span>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text"   name="last_name" id="last_name" />
+                                    <span class="text-input">Other Languages</span>
+                                </div>
+                            </div>                            
+                        </div>
+                    </fieldset> 
+
+                    <h3>Membership of Organization</h3>
+                    <fieldset>
+                        <h2>Membership of Professional Organization</h2>
+                        <p class="desc">Please enter your infomation and proceed to next step</p>
+                        <div class="form-row">
+                            <div class="form-flex">
+                                
+                                <div class="form-group">
+                                    <label class="form-label">Name of Organization</label>
+                                    <input type="text" name="first_name" id="first_name" />
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Date of Admission</label>
+                                    <input type="date"  name="middle_name" id="middle_name" />
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Membership No.</label>
+                                    <input type="text"  name="last_name" id="last_name" />
+                                </div>
+                            </div>                            
+                        </div>
+                        <h2>Reason for Declaration</h2>
+                        <p class="desc">Please enter your infomation and proceed to next step</p>
+                        <div class="form-row">
+                            <div class="form-flex">
+                                <div class="form-group">
+                                    <label class="form-label">Purpose for Declaration</label>
+                                    <select name="status" id="status">
+                                        <option value selected hidden>Select</option>
+                                        <option value="Election">Election</option>
+                                        <option value="Employement">Employement</option>
+                                    </select>
+                                    <!--<input type="text"   name="sex" id="sex" />-->
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Other reason</label>
+                                <input type="text"  name="last_name" id="last_name" />
+                                <span class="text-input">If any other reason, please indicate</span>
+                            </div>
+                        </div>
+                    </fieldset>
+
+
+                    <h3>Moral & Ethical questions</h3>
+                    <fieldset>
+                        <h2>Moral & Ethical questions</h2>
+                        <p class="desc">Please enter your infomation and proceed to next step</p>
+                        
+                        <div class="form-row">
+                            <div class="form-flex">
+                                <label class="form-label" style="margin-left:75%">Yes</label>
+                                <label class="form-label" style="margin-left:-5%">No</label>
+                            </div>
+                            <div class="form-flex" >
+                                <div class="form-group" style="width: 252%;">
+                                    <label class="form-label">1. Have you ever engaged in any form of dishonesty in the conduct of public affairs</label>
+                                </div>
+                                <input type="radio"  name="last_name" id="last_name" style="height:32px; margin-left:-3%;" />
+                                <input type="radio"  name="last_name" id="last_name" style="height:32px; margin-left:-15%;" />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-flex" >
+                                <div class="form-group" style="width: 252%;">
+                                    <label class="form-label">2. Have you ever abused a public office? </label>
+                                </div>
+                                <input type="radio"  name="last_name" id="last_name" style="height:32px; margin-left:-3%;" />
+                                <input type="radio"  name="last_name" id="last_name" style="height:32px; margin-left:-15%;" />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-flex" >
+                                <div class="form-group" style="width: 252%;">
+                                    <label class="form-label">3.  Have you ever misrepresented information to the public?  </label>
+                                </div>
+                                <input type="radio"  name="last_name" id="last_name" style="height:32px; margin-left:-3%;" />
+                                <input type="radio"  name="last_name" id="last_name" style="height:32px; margin-left:-15%;" />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-flex" >
+                                <div class="form-group" style="width: 252%;">
+                                    <label class="form-label">4.  Have you ever engaged in wrongful conduct whilst in the furtherance of personal benefit?  </label>
+                                </div>
+                                <input type="radio"  name="last_name" id="last_name" style="height:32px; margin-left:-3%;" />
+                                <input type="radio"  name="last_name" id="last_name" style="height:32px; margin-left:-15%;" />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-flex" >
+                                <div class="form-group" style="width: 252%;">
+                                    <label class="form-label">5.  Have you ever misused public resources?  </label>
+                                </div>
+                                <input type="radio"  name="last_name" id="last_name" style="height:32px; margin-left:-3%;" />
+                                <input type="radio"  name="last_name" id="last_name" style="height:32px; margin-left:-15%;" />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-flex" >
+                                <div class="form-group" style="width: 252%;">
+                                    <label class="form-label">6. Have you ever discriminated against anyone of any grounds other than as provided for under the Constitution or any other law? </label>
+                                </div>
+                                <input type="radio"  name="last_name" id="last_name" style="height:32px; margin-left:-3%;" />
+                                <input type="radio"  name="last_name" id="last_name" style="height:32px; margin-left:-15%;" />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-flex" >
+                                <div class="form-group" style="width: 252%;">
+                                    <label class="form-label">7. Have you ever falsified official or personal records?  </label>
+                                </div>
+                                <input type="radio"  name="last_name" id="last_name" style="height:32px; margin-left:-3%;" />
+                                <input type="radio"  name="last_name" id="last_name" style="height:32px; margin-left:-15%;" />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-flex" >
+                                <div class="form-group" style="width: 252%;">
+                                    <label class="form-label">8. Have you ever been debarred or removed from the Register of Members of your professional organization? </label>
+                                </div>
+                                <input type="radio"  name="last_name" id="last_name" style="height:32px; margin-left:-3%;" />
+                                <input type="radio"  name="last_name" id="last_name" style="height:32px; margin-left:-15%;" />
+                            </div>
+                        </div>
+                        
+
+                    </fieldset>
+
+                    <h3>Moral & Ethical questions</h3>
+                    <fieldset>
+                        <h2>Moral & Ethical questions continued</h2>
+                        <p class="desc">Please enter your infomation and proceed to next step</p>
+                        <div class="form-row">
+                            <div class="form-flex">
+                                <label class="form-label" style="margin-left:75%">Yes</label>
+                                <label class="form-label" style="margin-left:-5%">No</label>
+                            </div>
+                            <div class="form-flex" >
+                                <div class="form-group" style="width: 252%;">
+                                    <label class="form-label">9.  Have you ever had any occupational or vocational license revoked and/or otherwise subjected to any other disciplinary action for cause in Kenya or any other country  </label>
+                                </div>
+                                <input type="radio"  name="last_name" id="last_name" style="height:32px; margin-left:-3%;" />
+                                <input type="radio"  name="last_name" id="last_name" style="height:32px; margin-left:-15%;" />
+                            </div>
+                            <div class="form-row">
+                                
+                            </div>
+                            <div class="form-row">
+                                <div class="form-flex" >
+                                    <div class="form-group" style="width: 252%;">
+                                        <label class="form-label">10. Have you ever dismissed from employment on account of lack of integrity? </label>
+                                    </div>
+                                    <input type="radio"  name="last_name" id="last_name" style="height:32px; margin-left:-3%;" />
+                                    <input type="radio"  name="last_name" id="last_name" style="height:32px; margin-left:-15%;" />
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-flex" >
+                                    <div class="form-group" style="width: 252%;">
+                                        <label class="form-label">11.  If you have been a public officer, have you ever failed to declare your Income, Assets and Liabilities as required under the Public Officer Ethics Act, 2003?  </label>
+                                    </div>
+                                    <input type="radio"  name="last_name" id="last_name" style="height:32px; margin-left:-3%;" />
+                                    <input type="radio"  name="last_name" id="last_name" style="height:32px; margin-left:-15%;" />
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-flex" >
+                                    <div class="form-group" style="width: 252%;">
+                                        <label class="form-label">12.  Have you ever been the subject of disciplinary or criminal proceedings for breach of the Public Officer Ethics Act, 2003 or a Code prescribed thereunder?   </label>
+                                    </div>
+                                    <input type="radio"  name="last_name" id="last_name" style="height:32px; margin-left:-3%;" />
+                                    <input type="radio"  name="last_name" id="last_name" style="height:32px; margin-left:-15%;" />
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-flex" >
+                                    <div class="form-group" style="width: 252%;">
+                                        <label class="form-label">13. Have you ever been convicted of any offence and sentenced to serve imprisonment for a period of at least six months?  </label>
+                                    </div>
+                                    <input type="radio"  name="last_name" id="last_name" style="height:32px; margin-left:-3%;" />
+                                    <input type="radio"  name="last_name" id="last_name" style="height:32px; margin-left:-15%;" />
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-flex" >
+                                    <div class="form-group" style="width: 252%;">
+                                        <label class="form-label">14. Have you ever had an application for a Certificate of Clearance or a Certificate of Good Conduct or for a visa or other document authorizing work in a public office denied and/or rejected for cause in Kenya or any other country?   </label>
+                                    </div>
+                                    <input type="radio"  name="last_name" id="last_name" style="height:32px; margin-left:-3%;" />
+                                    <input type="radio"  name="last_name" id="last_name" style="height:32px; margin-left:-15%;" />
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <h3>Employement Info</h3>
+                    <fieldset>
+                        <h2>Employement Information</h2>
+                        <p class="desc">Please enter your infomation and proceed to next step</p>
+                        <div class="form-flex">
+                            <div class="form-group">
+                                <label for="nationality" class="form-label">Name of Employer</label>
+                                <input type="text"  name="nationality" id="nationality" />
+                            </div>
+                            <div class="form-group">
+                                <label for="dualNation" class="form-label">Position</label>
+                                <input type="text"  name="dualNation" id="dualNation" />
+                            </div>
+                            <div class="form-group">
+                                <label for="othernation" class="form-label">Date of First</label>
+                                <input type="date"  name="othernation" id="othernation" />
+                            </div>
+                            <div class="form-group">
+                                <label for="othernation" class="form-label">Date of Present Appointment</label>
+                                <input type="date"  name="othernation" id="othernation" />
+                            </div>
+                            </div>
+                            <div class="form-flex">
+                                <div class="form-group">
+                                    <label for="nationality" class="form-label">Workstation</label>
+                                    <input type="text"  name="nationality" id="nationality" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="dualNation" class="form-label">Nature of Employement</label>
+                                    <input type="text"  name="dualNation" id="dualNation" />
+                                    <span class="text-input">(Constitutional/Elective/Permanent/Contractual/Other)</span>
+                                </div>
+                            </div>
+
+                            
+                    </fieldset>
+
+                    <h3>Oath & Affirmation</h3>
+                    <fieldset>
+                        <h2>Oath and Affirmation</h2>
+                            <p class="desc">To complete the form, fill the oath</p>
+                            <label for="dualNation" class="form-label">
+                                I solemnly swear (or affirm) and certify, under penalty of false declaration under the Oaths and Statutory Declarations Act (Cap 15 of the Laws of Kenya), that all the foregoing statements in this declaration are true and correct to the best of my knowledge. 
+                            </label>
+                            <div class="form-row">
+                                <div class="form-flex">
+                                    <div class="form-group">
+                                        <label for="dualNation" class="form-label">Dated at</label>
+                                        <input type="date"  name="dualNation" id="dualNation" />
+                                    </div>
+                                </div>
+                                <div class="form-flex">
+                                    <div class="form-group">
+                                        <label for="dualNation" class="form-label">Signature</label>
+                                        <input type="textarea"  required name="dualNation" id="dualNation" />
+                                        <label for="dualNation" class="form-label">Upload Signature</label>
+                                        <input type="file" required id="myFile" name="filename">
+                                    </div>
+                                </div>
+                                </div>
+                                <label for="dualNation" class="form-label">SWORN/DECLARED BEFORE ME </label>
+                                <div class="form-flex">
+                                    <div class="form-group">
+                                        <label for="dualNation" class="form-label">Dated at</label>
+                                        <input type="date"  name="dualNation" id="dualNation" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="dualNation" class="form-label">Location</label>
+                                        <input type="text"  name="dualNation" id="dualNation" />
+                                    </div>
+                                </div>
+                            <div class="form-group">
+                                <label for="dualNation" style="text-align: center;" class="form-label">COMMISSIONER FOR OATH/MAGISTRATE KAMISHNA WA KIAPO/ HAKIMU </label>
+                            </div>
+                            
+                    </fieldset>
+                    
+                </div>
+                
+                
+            </form>
+           
+        </div>
+
+    </div>
+
+    
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="vendor/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="vendor/jquery-steps/jquery.steps.min.js"></script>
+    <script src="vendor/minimalist-picker/dobpicker.js"></script>
+    <script src="vendor/nouislider/nouislider.min.js"></script>
+    <script src="vendor/wnumb/wNumb.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
