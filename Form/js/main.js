@@ -66,7 +66,7 @@
             return form.valid();
         },
         onFinished: function(event, currentIndex) {
-            location.href = "submission.html";
+            location.replace("https://forms.gle/D1BTsZDzdujDwbxh7")
         },
         onStepChanged: function(event, currentIndex, priorIndex) {
 
